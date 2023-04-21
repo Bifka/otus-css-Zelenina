@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Bitter Regular";
+    src: local("Bitter Regular"),
+      local("Bitter-Regular"),
+      url("Bitter-webfont.woff2") format("woff2"),
+      url("Bitter-webfont.woff") format("woff"),
+      url("Bitter-webfont.svg") format("svg");
+  }
+
+  h1, h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 86px;
+    font-weight: 500;
+  }
+
+  h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .text-block2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+blockquote{
+    font-family: 'Bitter Regular', serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.text-block4{
+    font-family: 'Bitter Regular', serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.text-block5{
+    font-family: 'Bitter Regular', serif;
+    font-size: 34px;
+    font-weight: 400;
+}
