@@ -110,6 +110,10 @@ li a{
   margin: 0 auto;
 }
 
+.hero-photo{
+  max-width: 100%;
+}
+
 .hero{
   position: relative;
 }
