@@ -47,3 +47,78 @@ blockquote{
     font-size: 34px;
     font-weight: 400;
 }
+
+/* Стили второго блока */
+
+.wrapper2{
+  max-width: 1175px;
+  margin: 0 auto;
+  padding-top: 135px;
+  max-height: 840px;
+} 
+
+.biography-block{
+  display: flex;
+}
+
+.biography-box{
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+}
+
+#section2{
+  position: relative;
+  left: 0.8%;
+  display: flex;
+  align-self: start;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+}
+
+.biography-box-photo{
+  width: 47%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.biography-photo{
+  width: 100%;
+}
+
+.biography-text{
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  position: relative;
+  left: 3%;
+}
+
+blockquote{
+  display: flex;
+  align-self: baseline;
+  flex-direction: column;
+  position: relative;
+  bottom: 7.5%;
+}
+
+.text-block2{
+  display: flex;
+  align-self: baseline;
+  position: relative;
+  bottom: 7.5%;
+}
+
+.line{
+  width: 14px;
+  height: 4px;
+  background: black;
+  margin-bottom: 15px;
+}
+
+.biography-title{
+  display: flex;
+  align-self: baseline;
+  padding-top: 90px;
+}
