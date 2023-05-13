@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+}
+
 @font-face {
     font-family: "Bitter Regular";
     src: local("Bitter Regular"),
@@ -24,7 +28,7 @@
     font-weight: 400;
   }
 
-  .text-block2{
+  .biography-paragraph{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -48,13 +52,12 @@ blockquote{
     font-weight: 400;
 }
 
-/* Стили второго блока */
+/* Стили блока biography */
 
-.wrapper2{
+.wrapper-biography{
   max-width: 1175px;
   margin: 0 auto;
   padding-top: 135px;
-  max-height: 840px;
 } 
 
 .biography-block{
@@ -67,9 +70,8 @@ blockquote{
   height: 100%;
 }
 
-#section2{
-  position: relative;
-  left: 0.8%;
+#section-biography{
+  margin-left: 3%;
   display: flex;
   align-self: start;
   justify-content: center;
@@ -89,25 +91,16 @@ blockquote{
 
 .biography-text{
   display: flex;
-  align-items: center;
   flex-direction: column; 
-  position: relative;
-  left: 3%;
+  padding: 6% 0 0 7.7%;
 }
 
 blockquote{
-  display: flex;
-  align-self: baseline;
-  flex-direction: column;
-  position: relative;
-  bottom: 7.5%;
+  margin-top: 10.4%;
 }
 
-.text-block2{
-  display: flex;
-  align-self: baseline;
-  position: relative;
-  bottom: 7.5%;
+.biography-paragraph{
+  margin-top: 6%;
 }
 
 .line{
@@ -122,3 +115,5 @@ blockquote{
   align-self: baseline;
   padding-top: 90px;
 }
+
+/* Окончание стилей блока biography */
