@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+}
+
 /* Стили текста */
 
 @font-face {
@@ -26,7 +30,7 @@
     font-weight: 400;
   }
 
-  .text-block2{
+.biography-paragraph{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -103,7 +107,7 @@ li a{
 
 /* Окончание стилей навигационного меню */
 
-/* Стили первого блока */
+/* Стили блока hero */
 
 .wrapper{
   max-width: 1065px;
@@ -131,12 +135,12 @@ li a{
 }
 
 .hero-title{
-  position: relative;
-  top: 9%;
+  margin-top: 17.5%;
 }
 
 .hero-description{
-  position: relative;
-  bottom: 9%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-top: 1%;
 }
-/* Окончание стилей первого блока */
+/* Окончание стилей блока hero */
