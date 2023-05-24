@@ -2,6 +2,8 @@
   margin: 0;
 }
 
+/* Стили текста */
+
 @font-face {
     font-family: "Bitter Regular";
     src: local("Bitter Regular"),
@@ -28,7 +30,8 @@
     font-weight: 400;
   }
 
-  .biography-paragraph{
+
+.biography-paragraph{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -51,6 +54,97 @@ blockquote{
     font-size: 34px;
     font-weight: 400;
 }
+
+/* Окончание стилей текста */
+
+/* Стили навигационного меню */
+
+.header{
+  text-align: center;
+  position: relative;
+  height: 135px;
+  padding: 55px 0 0 0;
+  width: 34px;
+  box-sizing: border-box;
+}
+
+.header-menu{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-dropdown{
+  text-align: left;
+  position: absolute;
+  z-index: 10;
+  width: 150px;
+  display: none;
+}
+
+.header:hover .header-dropdown{
+  display: block;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  border: 1px solid gray;
+  background-color: white;
+}
+
+li a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+/* Окончание стилей навигационного меню */
+
+/* Стили блока hero */
+
+.wrapper{
+  max-width: 1065px;
+  margin: 0 auto;
+}
+
+.hero-photo{
+  width: 100%;
+}
+
+.hero{
+  position: relative;
+  max-height: 630px;
+}
+
+.hero-box{
+  height: 57%;
+  background: rgb(255, 255, 255);
+  width: 56%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-title{
+  margin-top: 17.5%;
+}
+
+.hero-description{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-top: 1%;
+}
+/* Окончание стилей блока hero */
 
 /* Стили блока biography */
 
