@@ -30,6 +30,7 @@
     font-weight: 400;
   }
 
+
 .biography-paragraph{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -144,3 +145,69 @@ li a{
   margin-top: 1%;
 }
 /* Окончание стилей блока hero */
+
+/* Стили блока biography */
+
+.wrapper-biography{
+  max-width: 1175px;
+  margin: 0 auto;
+  padding-top: 135px;
+} 
+
+.biography-block{
+  display: flex;
+}
+
+.biography-box{
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+}
+
+#section-biography{
+  margin-left: 3%;
+  display: flex;
+  align-self: start;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+}
+
+.biography-box-photo{
+  width: 47%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.biography-photo{
+  width: 100%;
+}
+
+.biography-text{
+  display: flex;
+  flex-direction: column; 
+  padding: 6% 0 0 7.7%;
+}
+
+blockquote{
+  margin-top: 10.4%;
+}
+
+.biography-paragraph{
+  margin-top: 6%;
+}
+
+.line{
+  width: 14px;
+  height: 4px;
+  background: black;
+  margin-bottom: 15px;
+}
+
+.biography-title{
+  display: flex;
+  align-self: baseline;
+  padding-top: 90px;
+}
+
+/* Окончание стилей блока biography */
