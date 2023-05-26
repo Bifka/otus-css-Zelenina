@@ -19,7 +19,7 @@
     font-weight: 500;
   }
 
-  h4{
+  .titles{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
   }
@@ -121,7 +121,7 @@ li a{
 
 .hero{
   position: relative;
-  max-height: 630px;
+  height: 630px;
 }
 
 .hero-box{
@@ -211,3 +211,70 @@ blockquote{
 }
 
 /* Окончание стилей блока biography */
+
+/* Стили блока designers */
+
+.wrapper-designers{
+  max-width: 1337px;
+  margin: 0 auto;
+  overflow: visible;
+  padding-top: 145px;
+}
+
+.designers-block{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  gap: 30px;
+  position: relative;
+  left: 25px;
+}
+
+#section-designers{
+  display: inline-block;
+  transform: rotate(-90deg);
+  transform-origin: right bottom;
+  position: relative;
+  left: 70%;
+}
+
+.designers-photo{
+  max-width: 320px;
+  max-height: 440px;
+  overflow: hidden;
+}
+
+.designers-big-photo{
+  max-width: 640px;
+  max-height: 540px;
+  overflow: hidden;
+}
+
+.designers-photo > img{
+  width: 100%;
+}
+
+.designers-main-info{
+  margin-left: 49%;
+}
+
+.designers-info{
+  margin-top: 22px;
+}
+
+.designers-name{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.designers-from::before {
+  content: "From/ ";
+  font-weight: 700;
+}
+
+.designers-skills::before {
+  content: "Skills/ ";
+  font-weight: 700;
+}
+
+/* Окончание стилей блока designers */
