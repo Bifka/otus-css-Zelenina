@@ -43,10 +43,18 @@ blockquote{
     font-weight: 400;
 }
 
-.text-block4{
+.text-testimonials{
     font-family: 'Bitter Regular', serif;
     font-size: 32px;
     font-weight: 400;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.testimonials-link{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .text-block5{
@@ -101,7 +109,7 @@ li a{
   text-decoration: none;
   color: black;
   display: block;
-  padding: 5px;
+  padding: 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
@@ -278,3 +286,57 @@ blockquote{
 }
 
 /* Окончание стилей блока designers */
+
+/* Стили блока testimonials */
+
+.wrapper-testimonials{
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.testimonials-block{
+  display: grid;
+  grid-template-columns: 6% 44% 50%;
+}
+
+#section-testimonials{
+  margin-bottom: 38px;
+}
+
+.testimonials-links{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-end;
+  margin-bottom: 15px;
+  gap: 190px;
+}
+
+.testimonials-link{
+  text-decoration: none;
+  color: black;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+}
+
+.testimoials-photo-big{
+  max-width: 515px;
+  max-height: 757px;
+  align-self: center;
+}
+
+.testimoials-photo-small{
+  max-width: 221;
+  max-height: 333px;
+}
+
+.testimoials-photo{
+  max-width: 100%;
+}
+
+.testimonials-purpose{
+  align-self: center;
+  justify-self: center;
+}
+
+/* Окончание стилей блока testimonials */
+
