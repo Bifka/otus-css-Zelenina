@@ -57,7 +57,7 @@ blockquote{
   font-weight: 400;
 }
 
-.text-block5{
+.strong-points-list{
     font-family: 'Bitter Regular', serif;
     font-size: 34px;
     font-weight: 400;
@@ -94,18 +94,18 @@ blockquote{
   display: block;
 }
 
-ul{
+.header-list{
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-li{
+.header-menu-item{
   border: 1px solid gray;
   background-color: white;
 }
 
-li a{
+.header-menu-link{
   text-decoration: none;
   color: black;
   display: block;
@@ -325,7 +325,7 @@ blockquote{
 }
 
 .testimoials-photo-small{
-  max-width: 221;
+  max-width: 221px;
   max-height: 333px;
 }
 
