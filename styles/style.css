@@ -292,6 +292,7 @@ blockquote{
 .wrapper-testimonials{
   max-width: 1180px;
   margin: 0 auto;
+  padding-top: 255px;
 }
 
 .testimonials-block{
@@ -340,3 +341,99 @@ blockquote{
 
 /* Окончание стилей блока testimonials */
 
+/* Стили блока strong points */
+
+.strong-points-wrapper{
+  padding: 115px 0 135px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.strong-points-block{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+@supports (display: grid){
+  .strong-points-block{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 24.5% 24.5% 27% 24%;
+    -ms-grid-columns: 24.5% 30px 24.5% 30px 27% 30px 24%;
+    gap: 30px;
+  }
+}
+
+#section-strengths{
+  display: inline-block;
+  -webkit-transform: translate(235%, -20%) rotate(-90deg);
+  -ms-transform: translate(235%, -20%) rotate(-90deg);
+  transform: translate(235%, -20%) rotate(-90deg);
+  -webkit-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  transform-origin: right bottom;
+  margin-bottom: 15px;
+}
+
+.title-strengths{
+  -webkit-transform: translate(53.5%, -20%);
+  -ms-transform: translate(53.5%, -20%);
+  transform: translate(53.5%, -20%);
+}
+
+.strong-points-photos{
+  max-width: 350px;
+  max-height: 525px;
+  align-self: center;
+}
+
+.strong-points-photo{
+  max-width: 100%;
+}
+
+.strong-points-links{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: translate(-4%, -1%);
+  -ms-transform: translate(-4%, -1%);
+  transform: translate(-4%, -1%);
+  min-width: 395px;
+}
+
+.strong-points-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.strong-points-link{
+  text-decoration: none;
+  color: black;
+}
+
+/* Окончание стилей strong points */
