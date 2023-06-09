@@ -347,7 +347,7 @@ blockquote{
   padding: 115px 0 135px 0;
   max-width: 1440px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .strong-points-block{
@@ -367,8 +367,8 @@ blockquote{
   .strong-points-block{
     display: -ms-grid;
     display: grid;
-    grid-template-columns: 24.5% 24.5% 27% 24%;
-    -ms-grid-columns: 24.5% 30px 24.5% 30px 27% 30px 24%;
+    grid-template-columns: auto auto auto auto;
+    -ms-grid-columns: auto 30px auto 30px auto 30px auto;
     gap: 30px;
   }
 }
@@ -391,7 +391,7 @@ blockquote{
 }
 
 .strong-points-photos{
-  max-width: 350px;
+  min-width: 350px;
   max-height: 525px;
   align-self: center;
 }
