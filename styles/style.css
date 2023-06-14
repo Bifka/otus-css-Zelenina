@@ -345,7 +345,7 @@ blockquote{
 
 .strong-points-wrapper{
   padding: 115px 0 135px 0;
-  max-width: 1440px;
+  max-width: 1535px;
   margin: 0 auto;
   overflow: auto;
 }
@@ -361,6 +361,10 @@ blockquote{
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   gap: 30px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-top: 15px;
 }
 
 @supports (display: grid){
@@ -370,6 +374,9 @@ blockquote{
     grid-template-columns: auto auto auto auto;
     -ms-grid-columns: auto 30px auto 30px auto 30px auto;
     gap: 30px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
   }
 }
 
@@ -385,15 +392,12 @@ blockquote{
 }
 
 .title-strengths{
-  -webkit-transform: translate(53.5%, -20%);
-  -ms-transform: translate(53.5%, -20%);
-  transform: translate(53.5%, -20%);
+  transform: translate(5%, -25%);
 }
 
 .strong-points-photos{
   min-width: 350px;
   max-height: 525px;
-  align-self: center;
 }
 
 .strong-points-photo{
@@ -404,6 +408,10 @@ blockquote{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-grid-column-align: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -415,6 +423,7 @@ blockquote{
   -ms-transform: translate(-4%, -1%);
   transform: translate(-4%, -1%);
   min-width: 395px;
+  margin-bottom: 10px;
 }
 
 .strong-points-list{
@@ -428,7 +437,7 @@ blockquote{
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 2px;
+  gap: 1px;
 }
 
 .strong-points-link{
