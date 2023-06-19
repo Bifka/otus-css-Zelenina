@@ -11,27 +11,30 @@
     <title>Document</title>
 </head>
 <body> 
-
+    
     <!-- Навигационное меню -->
-    <header class="header wrapper">
+    <header class="header header-desktop wrapper">
         <button type="button" class="header-menu"><img src="./images/Menu.png" alt="/"></button>
         <nav class="header-dropdown">
             <ul class="header-list">
-                <li class="header-menu-item"><a href="#section-biography" class="header-menu-link">Biography</a></li>
-                <li class="header-menu-item"><a href="#section-designers" class="header-menu-link">Designers</a></li>
-                <li class="header-menu-item"><a href="#section-testimonials" class="header-menu-link">Testimonials</a></li>
-                <li class="header-menu-item"><a href="#section-strengths" class="header-menu-link">Strong points</a></li>
+                <li class="header-menu-item"><a href="#section-biography" class="header-menu-link">B</a></li>
+                <li class="header-menu-item"><a href="#section-designers" class="header-menu-link">D</a></li>
+                <li class="header-menu-item"><a href="#section-testimonials" class="header-menu-link">T</a></li>
+                <li class="header-menu-item"><a href="#section-strengths" class="header-menu-link">S</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Блок hero -->
-    <section class="hero wrapper">
-        <img src="./images/hero.jpg" alt="/" class="hero-photo">
+    <section class="hero wrapper">  
         <div class="hero-box">
             <h1 class="hero-title">Mod Studio</h1>
             <h2 class="hero-description">Modern Web Studio</h2>
         </div>
+        <picture>
+            <source srcset="./images/hero-small.png" media="(max-width: 768px)">
+            <img class="hero-photo" src="./images/hero.jpg" alt="sofa">
+        </picture>
     </section>
 
     <!-- Блок biography -->
@@ -39,21 +42,41 @@
     <section class="biography-block wrapper-biography">
         <div class="biography-box">
             <div class="biography-box-photo">
-                <img src="./images/mills.jpg" alt="/" class="biography-photo">
+                <picture>
+                    <source srcset="./images/mills-small.jpg" media="(max-width: 768px)">
+                    <img class="biography-photo" src="./images/mills.jpg" alt="Mills">
+                </picture>
             </div>
             <h2 id="section-biography" class="titles">Biography</h2>
+
             <div class="biography-text">
-                <h2 class="biography-title">Katya<br>
+
+                <h2 class="biography-title biography-desktop">Katya<br>
                     Mills</h2>
-                <p class="biography-paragraph">Art Director<br>
-                    Scenography / Styling / Creative Photography / Design</p><br>
-                
-                <blockquote class="blockquote">
-                    <div class="line"></div>
+                <h2 class="biography-title biography-mobile">Katya Mills</h2>
+
+                <p class="biography-paragraph biography-desktop">Art Director<br>
+                    Scenography / Styling / Creative Photography / Design</p>
+                <div class="biography-paragraph biography-mobile">
+                    <ul class="biography-list">
+                        <li class="biography-list-element">Art Director</li>
+                        <li class="biography-list-element">Scenography</li>
+                        <li class="biography-list-element">Styling</li>
+                        <li class="biography-list-element">Creative Photography</li>
+                        <li class="biography-list-element">Design</li>
+                      </ul>
+                </div>
+
+                <blockquote class="blockquote biography-desktop">
                     “The more I deal with the work<br>
                     as something that is my own,  <br>
                     as something that is personal, <br>
                     the more successful it is.”</blockquote>
+                <blockquote class="blockquote biography-mobile">
+                    “The more I deal with <br>
+                    the work as something that is my own, <br>
+                    as something that <br>
+                    is personal, the more successful it is.”</blockquote>
             </div>
       </div>
     </section>
@@ -66,7 +89,10 @@
 
             <figure class="desiner-item desiner-main-item">
                 <div class="designers-photo designers-big-photo">
-                    <img src="./images/wonder.jpg" alt="/">
+                    <picture>
+                        <source srcset="./images/wonder-small.png" media="(max-width: 990px)">
+                        <img class="designer-photo" src="./images/wonder.jpg" alt="Wonder">
+                    </picture>
                 </div>
                 <figcaption class="designers-info designers-main-info">
                     <p class="designers-name">Jess Wonder</p>
@@ -77,7 +103,7 @@
 
             <figure class="desiner-item">
                 <div  class="designers-photo">
-                    <img src="./images/clein.png" alt="/">
+                    <img class="designer-photo" src="./images/clein.png" alt="Clein">
                 </div>
                 <figcaption class="designers-info">
                     <p class="designers-name">Kameron Clein</p>
@@ -88,7 +114,7 @@
 
             <figure class="desiner-item">
                 <div  class="designers-photo">
-                    <img src="./images/red.png" alt="/">
+                    <img class="designer-photo" src="./images/red.png" alt="Red">
                 </div>
                  <figcaption class="designers-info">
                     <p class="designers-name">LOUISSE RED</p>
@@ -117,11 +143,11 @@
             </div>
 
             <div class="testimoials-photo-big">
-                <img src="./images/testimonials.png" alt="/" class="testimoials-photo">
+                <img src="./images/testimonials.png" alt="Cafe" class="testimoials-photo">
             </div>
 
             <div class="testimonials-purpose">
-                <p class="text-testimonials">I just really <br>
+                <p class="text-testimonials text-testimonials-desktop">I just really <br>
                     want to do <br>
                     good work<br>
                     and work with <br>
@@ -129,8 +155,16 @@
                     people, people <br>
                     who challenge <br>
                     me.</p>
+                <p class="text-testimonials text-testimonials-mobile">I just really want to do <br>
+                    good work and work<br> 
+                    with some great people,<br>
+                    people who challenge <br>
+                    me.</p>
                 <div class="testimoials-photo-small">
-                    <img src="./images/testimonials-2.png" alt="/" class="testimoials-photo">
+                    <picture>
+                        <source srcset="./images/testimonials-2-small.png" media="(max-width: 990px)">
+                        <img class="testimoials-photo" src="./images/testimonials-2.png" alt="String bag">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -196,5 +230,18 @@
             </div>
         </div>
     </section>
+
+    <header class="header header-mobile wrapper">
+        <button type="button" class="header-menu"><img src="./images/Menu.png" alt="/"></button>
+        <nav class="header-dropdown">
+            <ul class="header-list">
+                <li class="header-menu-item"><a href="#section-biography" class="header-menu-link">B</a></li>
+                <li class="header-menu-item"><a href="#section-designers" class="header-menu-link">D</a></li>
+                <li class="header-menu-item"><a href="#section-testimonials" class="header-menu-link">T</a></li>
+                <li class="header-menu-item"><a href="#section-strengths" class="header-menu-link">S</a></li>
+            </ul>
+        </nav>
+    </header>
+
 </body>
 </html>
