@@ -67,6 +67,22 @@ blockquote{
 
 /* Стили навигационного меню */
 
+.header-menu-link::after{
+  display: block;
+  content: "";
+  background-color: black;
+  height: 1px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  transition: width .3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.header-menu-link:hover:after, .header-menu-link:focus:after{
+  width: 70px;
+}
+
 .header{
   text-align: center;
   position: relative;
@@ -145,7 +161,22 @@ blockquote{
 
 .hero-title{
   margin-top: 17.5%;
+  animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .hero-description{
   font-family: 'Roboto', sans-serif;
@@ -252,6 +283,19 @@ blockquote{
   overflow: hidden;
 }
 
+.designers-photo:hover{
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .designers-big-photo{
   max-width: 640px;
   max-height: 540px;
@@ -317,6 +361,29 @@ blockquote{
   color: black;
   transform: rotate(-90deg);
   transform-origin: top left;
+}
+
+.testimonials-link::after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px; 
+  background-color: black;
+  transition: width 0.5s;
+}
+
+.testimonials-link:hover:after{
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  transition: width 0.5s; 
 }
 
 .testimoials-photo-big{
@@ -434,6 +501,22 @@ blockquote{
 .strong-points-link{
   text-decoration: none;
   color: black;
+}
+
+.strong-points-link::after{
+  display: block;
+  content: "";
+  background-color: black;
+  height: 1px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  transition: width .3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.strong-points-link:hover:after, .strong-points-link:focus:after{
+  width: 60%;
 }
 
 /* Окончание стилей strong points */
