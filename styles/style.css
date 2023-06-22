@@ -31,7 +31,7 @@
   }
 
 
-.biography-paragraph{
+.biography__paragraph{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -43,7 +43,7 @@ blockquote{
     font-weight: 400;
 }
 
-.text-testimonials{
+.testimonials__text{
     font-family: 'Bitter Regular', serif;
     font-size: 32px;
     font-weight: 400;
@@ -51,13 +51,13 @@ blockquote{
     margin-bottom: 42px;
 }
 
-.testimonials-link{
+.testimonials__link{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
 
-.strong-points-list{
+.strong-points__list{
     font-family: 'Bitter Regular', serif;
     font-size: 34px;
     font-weight: 400;
@@ -76,13 +76,13 @@ blockquote{
   box-sizing: border-box;
 }
 
-.header-menu{
+.header__menu-btn{
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
 
-.header-dropdown{
+.header__dropdown{
   text-align: left;
   position: absolute;
   z-index: 10;
@@ -90,22 +90,22 @@ blockquote{
   display: none;
 }
 
-.header:hover .header-dropdown{
+.header:hover .header__dropdown{
   display: block;
 }
 
-.header-list{
+.header__list{
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.header-menu-item{
+.header__item{
   border: 1px solid gray;
   background-color: white;
 }
 
-.header-menu-link{
+.header__link{
   text-decoration: none;
   color: black;
   display: block;
@@ -123,7 +123,7 @@ blockquote{
   margin: 0 auto;
 }
 
-.hero-photo{
+.hero__photo{
   width: 100%;
 }
 
@@ -132,7 +132,7 @@ blockquote{
   height: 630px;
 }
 
-.hero-box{
+.hero__box{
   height: 57%;
   background: rgb(255, 255, 255);
   width: 56%;
@@ -143,11 +143,11 @@ blockquote{
   text-align: center;
 }
 
-.hero-title{
+.hero__title{
   margin-top: 17.5%;
 }
 
-.hero-description{
+.hero__description{
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   margin-top: 1%;
@@ -156,23 +156,20 @@ blockquote{
 
 /* Стили блока biography */
 
-.wrapper-biography{
+.biography{
   max-width: 1175px;
   margin: 0 auto;
   padding-top: 135px;
-} 
-
-.biography-block{
   display: flex;
 }
 
-.biography-box{
+.biography__box{
   display: flex;
   max-width: 100%;
   height: 100%;
 }
 
-#section-biography{
+#biography__section{
   margin-left: 3%;
   display: flex;
   align-self: start;
@@ -181,17 +178,18 @@ blockquote{
   transform: rotate(-180deg);
 }
 
-.biography-box-photo{
+.biography__photo{
   width: 47%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.biography-photo{
+
+.biography__image{
   width: 100%;
 }
 
-.biography-text{
+.biography__text{
   display: flex;
   flex-direction: column; 
   padding: 6% 0 0 7.7%;
@@ -201,7 +199,7 @@ blockquote{
   margin-top: 10.4%;
 }
 
-.biography-paragraph{
+.biography__paragraph{
   margin-top: 6%;
 }
 
@@ -212,7 +210,7 @@ blockquote{
   margin-bottom: 15px;
 }
 
-.biography-title{
+.biography__title{
   display: flex;
   align-self: baseline;
   padding-top: 90px;
@@ -222,14 +220,14 @@ blockquote{
 
 /* Стили блока designers */
 
-.wrapper-designers{
+.designers{
   max-width: 1337px;
   margin: 0 auto;
   overflow: visible;
   padding-top: 145px;
 }
 
-.designers-block{
+.designers__cards{
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-end;
@@ -238,7 +236,7 @@ blockquote{
   left: 25px;
 }
 
-#section-designers{
+#designers__section{
   display: inline-block;
   transform: rotate(-90deg);
   transform-origin: right bottom;
@@ -246,41 +244,41 @@ blockquote{
   left: 70%;
 }
 
-.designers-photo{
+.designers__photo{
   max-width: 320px;
   max-height: 440px;
   overflow: hidden;
 }
 
-.designers-big-photo{
+.designers__photo_big{
   max-width: 640px;
   max-height: 540px;
   overflow: hidden;
 }
 
-.designers-photo > img{
+.designers__photo > img{
   width: 100%;
 }
 
-.designers-main-info{
+.designers__info_main{
   margin-left: 49%;
 }
 
-.designers-info{
+.designers__info{
   margin-top: 22px;
 }
 
-.designers-name{
+.designers__name{
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.designers-from::before {
+.designers__from::before {
   content: "From/ ";
   font-weight: 700;
 }
 
-.designers-skills::before {
+.designers__skills::before {
   content: "Skills/ ";
   font-weight: 700;
 }
@@ -289,22 +287,22 @@ blockquote{
 
 /* Стили блока testimonials */
 
-.wrapper-testimonials{
+.testimonials{
   max-width: 1180px;
   margin: 0 auto;
   padding-top: 255px;
 }
 
-.testimonials-block{
+.testimonials__block{
   display: grid;
   grid-template-columns: 6% 44% 50%;
 }
 
-#section-testimonials{
+#testimonials-section{
   margin-bottom: 38px;
 }
 
-.testimonials-links{
+.testimonials__links{
   display: flex;
   flex-flow: row wrap;
   align-content: flex-end;
@@ -312,29 +310,29 @@ blockquote{
   gap: 190px;
 }
 
-.testimonials-link{
+.testimonials__link{
   text-decoration: none;
   color: black;
   transform: rotate(-90deg);
   transform-origin: top left;
 }
 
-.testimoials-photo-big{
+.testimoials__photo_big{
   max-width: 515px;
   max-height: 757px;
   align-self: center;
 }
 
-.testimoials-photo-small{
+.testimoials__photo_small{
   max-width: 221px;
   max-height: 333px;
 }
 
-.testimoials-photo{
+.testimoials__photo{
   max-width: 100%;
 }
 
-.testimonials-purpose{
+.testimonials__purpose{
   align-self: center;
   justify-self: center;
 }
@@ -343,14 +341,14 @@ blockquote{
 
 /* Стили блока strong points */
 
-.strong-points-wrapper{
+.strong-points{
   padding: 115px 0 135px 0;
   max-width: 1440px;
   margin: 0 auto;
   overflow: auto;
 }
 
-.strong-points-block{
+.strong-points__block{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,7 +362,7 @@ blockquote{
 }
 
 @supports (display: grid){
-  .strong-points-block{
+  .strong-points__block{
     display: -ms-grid;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -373,7 +371,7 @@ blockquote{
   }
 }
 
-#section-strengths{
+#strong-points__section{
   display: inline-block;
   -webkit-transform: translate(235%, -20%) rotate(-90deg);
   -ms-transform: translate(235%, -20%) rotate(-90deg);
@@ -384,23 +382,23 @@ blockquote{
   margin-bottom: 15px;
 }
 
-.title-strengths{
+.strong-points__title{
   -webkit-transform: translate(53.5%, -20%);
   -ms-transform: translate(53.5%, -20%);
   transform: translate(53.5%, -20%);
 }
 
-.strong-points-photos{
+.strong-points__photos{
   min-width: 350px;
   max-height: 525px;
   align-self: center;
 }
 
-.strong-points-photo{
+.strong-points__photo{
   max-width: 100%;
 }
 
-.strong-points-links{
+.strong-points__links{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,7 +415,7 @@ blockquote{
   min-width: 395px;
 }
 
-.strong-points-list{
+.strong-points__list{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -431,7 +429,7 @@ blockquote{
   gap: 2px;
 }
 
-.strong-points-link{
+.strong-points__link{
   text-decoration: none;
   color: black;
 }
