@@ -3,5 +3,14 @@
     "http-server": "^14.1.1",
     "lodash": "^4.17.21",
     "prettier": "^2.8.8"
-  }
+  },
+  "name": "otus",
+  "description": "- Научиться верстать сайты \r - Применять полученные знания на практике\r - Освоить нувую профессию\r - Найти новую работу после завершения курса",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
