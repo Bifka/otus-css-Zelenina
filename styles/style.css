@@ -98,14 +98,13 @@ blockquote{
   background-color: black;
   height: 1px;
   width: 0%;
-  left: 50%;
   position: absolute;
   transition: width .3s ease-in-out;
-  transform: translateX(-50%);
+  transform: translateX(40%);
 }
 
 .header-menu-link:hover:after, .header-menu-link:focus:after{
-  width: 70px;
+  width: 50px;
 }
 
 .header{
@@ -240,7 +239,6 @@ blockquote{
     opacity: 1;
   }
 }
-
 
 .hero-description{
   font-family: 'Roboto', sans-serif;
@@ -887,6 +885,7 @@ blockquote{
 
 .strong-points-link:hover:after, .strong-points-link:focus:after{
   width: 60%;
+}
 
 @media screen and (max-width: 990px) {
   .strong-points-wrapper{
