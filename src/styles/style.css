@@ -8,28 +8,20 @@
     font-family: "Bitter Regular";
     src: local("Bitter Regular"),
       local("Bitter-Regular"),
-      url("./fonts/Bitter-VariableFont_wght.ttf") format("ttf"),
-      url("./fonts/Bitter-webfont.woff2") format("woff2"),
-      url("./fonts/Bitter-webfont.woff") format("woff"),
-      url("./fonts/Bitter-webfont.svg") format("svg");
+      url("../fonts/Bitter-Regular.ttf") format("ttf");
   }
 
   @font-face {
     font-family: "Bitter Light";
     src: local("Bitter Light"),
       local("Bitter-Light"),
-      url("./fonts/Bitter-VariableFont_wght.ttf") format("ttf"),
-      url("./fonts/Bitter-Light-webfont.woff2") format("woff2"),
-      url("./fonts/Bitter-Light-webfont.woff") format("woff"),
-      url("./fonts/Bitter-Light-webfont.svg") format("svg");
+      url("../fonts/Bitter-Light.ttf") format("ttf");
   }
 
   @font-face {
     font-family: "Butler";
     src: local("Butler"), 
-    url("./fonts/Butler.woff2") format("woff2"),
-    url("./fonts/Butler.woff") format("woff"),
-    url("./fonts/Butler.svg") format("svg");
+    url("../fonts/Butler.ttf") format("ttf");
   }
 
   h1, h2{
