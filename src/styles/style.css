@@ -8,28 +8,20 @@
     font-family: "Bitter Regular";
     src: local("Bitter Regular"),
       local("Bitter-Regular"),
-      url("./fonts/Bitter-VariableFont_wght.ttf") format("ttf"),
-      url("./fonts/Bitter-webfont.woff2") format("woff2"),
-      url("./fonts/Bitter-webfont.woff") format("woff"),
-      url("./fonts/Bitter-webfont.svg") format("svg");
+      url("../fonts/Bitter-Regular.ttf") format("ttf");
   }
 
   @font-face {
     font-family: "Bitter Light";
     src: local("Bitter Light"),
       local("Bitter-Light"),
-      url("./fonts/Bitter-VariableFont_wght.ttf") format("ttf"),
-      url("./fonts/Bitter-Light-webfont.woff2") format("woff2"),
-      url("./fonts/Bitter-Light-webfont.woff") format("woff"),
-      url("./fonts/Bitter-Light-webfont.svg") format("svg");
+      url("../fonts/Bitter-Light.ttf") format("ttf");
   }
 
   @font-face {
     font-family: "Butler";
     src: local("Butler"), 
-    url("./fonts/Butler.woff2") format("woff2"),
-    url("./fonts/Butler.woff") format("woff"),
-    url("./fonts/Butler.svg") format("svg");
+    url("../fonts/Butler.ttf") format("ttf");
   }
 
   h1, h2{
@@ -98,14 +90,13 @@ blockquote{
   background-color: black;
   height: 1px;
   width: 0%;
-  left: 50%;
   position: absolute;
   transition: width .3s ease-in-out;
-  transform: translateX(-50%);
+  transform: translateX(40%);
 }
 
 .header-menu-link:hover:after, .header-menu-link:focus:after{
-  width: 70px;
+  width: 50px;
 }
 
 .header{
@@ -240,7 +231,6 @@ blockquote{
     opacity: 1;
   }
 }
-
 
 .hero-description{
   font-family: 'Roboto', sans-serif;
@@ -887,6 +877,7 @@ blockquote{
 
 .strong-points-link:hover:after, .strong-points-link:focus:after{
   width: 60%;
+}
 
 @media screen and (max-width: 990px) {
   .strong-points-wrapper{
