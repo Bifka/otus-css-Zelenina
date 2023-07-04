@@ -25,7 +25,20 @@ module.exports = {
         rules: [
             {
                 test: /\.(c|sa|sc)ss$/i,
-                use: [MiniCss.loader, "css-loader", "sass-loader"],
+                use: [MiniCss.loader, "css-loader", "sass-loader",
+                {
+                    loader: "postcss-loader",
+                    options: {
+                        postcssOptions: {
+                            plugins: [
+                                "autoprefixer",
+                                "postcss-preset-env",
+                                "at-rule-packer",
+                            ]
+                        }
+                    }
+                }
+            ],
             },
             {
                 test: /\.html$/,
@@ -38,6 +51,35 @@ module.exports = {
                     filename: 'images/[name]-[hash][ext]',
                 }
             },
+            {
+                test: /\.(jpeg|jpg|png|svg|gif)$/i,
+                use: [
+                {
+                loader: 'image-webpack-loader',
+                options: {
+                mozjpeg: {
+                progressive: true,
+                },
+                // optipng.enabled: false will disable optipng
+                optipng: {
+                enabled: false,
+                },
+                pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4
+                },
+                gifsicle: {
+                interlaced: false,
+                },
+                // the webp option will enable WEBP
+                webp: {
+                quality: 75
+                }
+                }
+                },
+                ],
+                type: 'asset/resource'
+            },                
             {
                 test: /\.(woff(2)?|eot|ttf|otf)$/,
                 type: 'asset/resource',
