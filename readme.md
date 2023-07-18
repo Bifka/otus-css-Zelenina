@@ -13,3 +13,11 @@
 
 ##
 Есть отдельная ветка, где версия для desktop переписана под БЭМ
+
+##
+Результат проверки Lighthouse на desktop версии:
+[Desktop version] (./src/images/desktop.png)
+
+## 
+Результат проверки Lighthouse на mobile версии:
+[Mobile version] (./src/images/mobile.png)
