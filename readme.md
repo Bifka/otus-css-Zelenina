@@ -13,3 +13,11 @@
 
 ##
 Есть отдельная ветка, где версия для desktop переписана под БЭМ
+
+##
+Результат проверки Lighthouse на desktop версии:
+[Desktop version] (https://github.com/Bifka/otus-css-Zelenina/blob/support/src/images/desktop.png)
+
+## 
+Результат проверки Lighthouse на mobile версии:
+[Mobile version] (https://github.com/Bifka/otus-css-Zelenina/blob/support/src/images/mobile.png)
